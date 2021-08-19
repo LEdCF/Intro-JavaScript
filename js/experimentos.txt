@@ -1,0 +1,125 @@
+//Análise de escopo:
+var validar = "sim"; //Escopo Global
+console.log (validar);
+function validaIdade(idade){
+//Análise de escopo:
+ //    var validar; //Escopo Local
+    validar; //Mantem o escopo Global, é opcional
+
+    if (idade >= 18){
+        validar = true
+    }else{
+        validar = false
+    }
+    return validar;
+    }
+
+var idade = prompt("Qual sua idade? ");
+console.log(validaIdade(idade));
+/*
+function soma(n1,n2){
+    return n1 + n2;
+}
+alert(soma(5,10));
+*/
+/*
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+alert(setReplace("Vai Japão", "Japão","Brasil!"));
+
+*/
+
+/*
+Condicionais, laços de repetição e data
+*/
+var d = new Date();
+//alert(d.getMonth());
+//console.log(d.getMinutes())
+//document.write(d.getDay())
+//console.log(d.getHours())
+console.log(d.getMinutes())
+
+/*
+var count;
+for(count=0; count<=5;count ++){
+    alert(count)
+}
+*/
+
+/*
+var count = 0;
+
+while (count <= 5){
+    console.log(count);
+    ++ count;
+}
+*/
+
+/*
+//if:
+var idade = prompt("Qual idade?");
+
+if (idade >= 18){
+    alert("maior de idade")
+}else{
+    alert("menor de idade")
+}
+*/
+
+//Array e Dicionário
+
+/*
+//Dicionário
+var frutas = [{nome:"jaboticaba", cor:"preta"},{nome:"goiaba", cor:"vermelha"}];
+console.log(frutas);
+alert(frutas[1].nome);
+*/
+/*
+var fruta = {nome:"jaboticaba", cor:"preta"};
+console.log(fruta.nome) //Retorna, no caso, jaboticaba
+alert(fruta.cor) //Retorna, no caso, preta
+*/
+
+//Array
+//var lista = ["maçã", " pera", " jaboticaba", " goiaba", " pitanga"];
+
+//lista.push("pitaia") //Acrescenta um elemento ao final
+//lista.pop() //Retira o último elemento
+
+//console.log(lista);
+
+//console.log(lista.toString()); //Autoexplicativa
+//console.log(lista.join(" - ")); //Converta para uma string, separada pelos caracteres entre aspas
+//console.log(lista.reverse());
+//console.log(lista.length); //Retorna a quantidade de elementos da lista
+//console.log(lista); //Retorna a lista completa
+//console.log(lista[1]); //Retorna o item referente ao indice, no caso o segundo
+//alert(lista[2]); //Retorna o item referente ao indice, no caso o terceiro
+
+
+texto
+/*
+// String
+var nome = "Luiz Eduardo";
+var idade = 56
+var idade2 = 10;
+var frase = "Estou aprendendo JavaScript!";
+//alert("Bem vindo à página de " + nome + ". Que tem " + idade +  " anos!");
+//alert(idade + idade2);
+console.log(nome)
+console.log(idade + idade2)
+//console.log(frase)
+//console.log(frase.replace("aprendendo", "entendendo"))
+//alert(frase.replace("aprendendo", "entendendo"));
+//console.log(frase.toUpperCase());
+console.log(frase.toLowerCase());
+// 
+
+
+// 
+// Number
+var n1 = 56;
+var n2 = 7;
+console.log(n1 * n2);
+/*
